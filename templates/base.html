@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ethical Investor</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Dashboard</a></li>
+            <li><a th:href="@{/preferences}">Preferences</a></li>
+            <li><a th:href="@{/portfolio}">Portfolio</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div layout:fragment="content"></div>
+    </main>
+
+    <script th:src="@{/js/charts.js}"></script>
+</body>
+</html>
